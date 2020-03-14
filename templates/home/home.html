@@ -1,0 +1,310 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  <link rel="stylesheet" href="{% static "css/app.css" %}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <script src="{% static 'js/app.js' %}"></script>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700&display=swap" rel="stylesheet">
+  <title>Munsel School </title>
+</head>
+<body class="font-custom min-h-screen">
+  <header class="py-4 px-6 absolute top-0 left-0 right-0 z-10">
+    <div class="container mx-auto">
+      <div class="flex items-center">
+        <div class="flex-1">
+          <a href="/" >
+            <img src="{% static "munsel.png" %}" class="h-16">
+          </a>
+        </div>
+        <button class="text-secondary lg:hidden">
+          <svg class="current-fill h-6 w-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="-49 141 512 512" style="enable-background:new -49 141 512 512;" xml:space="preserve">
+            <g>
+              <g>
+                <path d="M413,422H1c-13.807,0-25-11.193-25-25s11.193-25,25-25h412c13.807,0,25,11.193,25,25S426.807,422,413,422z"/>
+              </g>
+              <g>
+                <path d="M413,562H1c-13.807,0-25-11.193-25-25s11.193-25,25-25h412c13.807,0,25,11.193,25,25S426.807,562,413,562z"/>
+              </g>
+              <g>
+                <path d="M413,282H1c-13.807,0-25-11.193-25-25s11.193-25,25-25h412c13.807,0,25,11.193,25,25S426.807,282,413,282z"/>
+              </g>
+            </g>
+          </svg>
+
+        </button>
+        <nav class="hidden lg:flex items-center">
+          <a href="#" class="px-6 py-3 font-bold uppercase text-primary border-b-2 border-primary">Home</a>
+          <!-- <a href="#our-process" class="px-6 py-3 font-bold uppercase text-secondary hover:text-primary">Process</a> -->
+          <a href="#about-us" class="px-6 py-3 font-bold uppercase text-secondary hover:text-primary">About us</a>
+          <a href="#services" class="px-6 py-3 font-bold uppercase text-secondary hover:text-primary">Blog</a>
+          <a href="#testimonials" class="px-6 py-3 font-bold uppercase text-secondary hover:text-primary">Team</a>
+          <a href="#contact" class="px-6 py-3 font-bold uppercase bg-primary hover:bg-primary-400 text-secondary rounded">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="relative overflow-hidden px-6 pb-6">
+    <img src="{% static "wave.svg" %}" class="absolute top-0 left-2/5">
+    <div class="container mx-auto relative">
+      <div class="flex flex-col md:flex-row items-center pt-32 pb-16 md:pb-0">
+        <div class="md:w-1/2 lg:w-1/3 mb-4 sm:mb-16 md:mb-0 label-one">
+          <h2 class="text-2xl font-bold text-secondary-600 uppercase mb-2">མུན་སེལ་སློབ་གྲྭ</h2>
+          <h1 class="text-4xl md:text-5xl font-bold text-secondary leading-tight mb-6 md:mb-10">Munsel School</h1>
+          <!-- <a href="#" class="bg-primary px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl text-secondary font-bold uppercase rounded hover:bg-primary-500">HEAR US</a> -->
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl text-secondary font-bold uppercase rounded hover:bg-primary-500">
+            HEAR US
+          </button>
+        </div>
+        <div class="mt-16 sm:mt-0 flex-1 flex justify-end">
+          <img src="{% static "flags.png" %}">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="our-process" class="relative">
+    <img src="{% static "circle2.svg" %}" class="hidden sm:block absolute top-0 left-0 -mx-32">
+    <div class="container mx-auto px-6 pt-6 pb-12 relative">
+      <h3 class="flex flex-col items-center text-4xl text-secondary font-bold mb-12">Our Motivations <span class="bg-primary h-1 w-20 block mt-4"></span></h3>
+      <div class="flex flex-col md:flex-row xl:px-32">
+        <div class="flex flex-col items-center md:px-6 lg:px-12 number-one">
+          <span class="text-6xl text-primary number-1" style="color: goldenrod;">1</span>
+          <h4 class="font-semibold text-2xl text-secondary mb-2">Tibetan Culture</h4>
+          <p class="text-center text-secondary-700 leading-relaxed">Our aims is to preserve tibetan culture. And to able use tibetan culture daily life.</p>
+        </div>
+        <div class="flex flex-col items-center md:px-6 lg:px-12 number-two">
+          <span class="text-6xl text-secondary number-2" style="color: goldenrod;">2</span>
+          <h4 class="font-semibold text-2xl text-secondary mb-2">Tibetan Language</h4>
+          <p class="text-center text-secondary-700 leading-relaxed">Our aims is to preserve tibetan language. and our future kids able write and read tibetan.</p>
+        </div>
+        <div class="flex flex-col items-center md:px-6 lg:px-12 number-three">
+          <span class="text-6xl text-primary number-3" style="color: goldenrod;">3</span>
+          <h4 class="font-semibold text-2xl text-secondary mb-2">Tibetan Religions</h4>
+          <p class="text-center text-secondary-700 leading-relaxed">Our aims is to preserve tibetan religions. and Our kids are compassionate and kindenss.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="about-us" class="bg-blue-100 mt-32 py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 md:pr-8 lg:pr-16 zoomin">
+          <img src="{% static "students.jpeg" %}" class="-mt-24 md:mt-0 lg:-mt-24 mb-16 md:mb-0 students" style="border-radius: 20px;">
+        </div>
+        <div class="md:w-1/2">
+          <h3 class="flex flex-col text-4xl text-secondary font-bold mb-6">About us <span class="bg-primary h-1 w-20 block mt-4"></span></h3>
+          <p class="text-lg text-secondary-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet est tellus, et consequat sem sodales id. Quisque molestie et mauris efficitur lacinia.</p>
+          <p class="text-lg text-secondary-700">Aliquam eget semper mi. Mauris magna risus, viverra in nulla id, placerat fermentum tellus. Aliquam non.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="services" class="relative">
+    <img sr="{% static "circle.svg" %}" class="absolute top-0 right-0 mt-64 hidden md:block">
+    <div class="container mx-auto px-6 py-32 relative">
+      <h3 class="flex flex-col items-center text-4xl text-secondary font-bold">We are doing <span class="bg-primary h-1 w-20 block mt-4"></span></h3>
+      <div class="flex flex-col md:flex-row items-center mb-24 md:mb-16 xl:mb-8 mt-16 md:mt-0 md:mt-16 lg:mt-0">
+        <img src="{% static "class.JPG" %}" class="md:w-1/3 zoomin2" style="border-radius: 20px;">
+        <div class="md:ml-16 xl:ml-32">
+          <h4 class="text-2xl md:text-3xl font-bold text-secondary-800 mb-4">Sunday Tibetan Class Zollikofen</h4>
+          <p class="text-secondary-700 text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet est tellus, et consequat sem sodales id. Quisque molestie et mauris efficitur lacinia.</p>
+          <p class="text-secondary-700 text-lg">Aliquam eget semper mi. Mauris magna risus, viverra in nulla id, placerat fermentum tellus. Aliquam non felis eu dui fermentum auctor. Aenean sed ante congue, facilisis ipsum eu, gravida lacus.</p>
+        </div>
+      </div>
+      <div class="flex flex-col-reverse md:flex-row items-center mb-24 md:mb-16 xl:mb-8">
+        <div class="md:mr-16 xl:mr-32">
+          <h4 class="text-2xl md:text-3xl font-bold text-secondary-800 mb-4">Tibetan Culture </h4>
+          <p class="text-secondary-700 text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet est tellus, et consequat sem sodales id. Quisque molestie et mauris efficitur lacinia.</p>
+          <p class="text-secondary-700 text-lg">Aliquam eget semper mi. Mauris magna risus, viverra in nulla id, placerat fermentum tellus. Aliquam non felis eu dui fermentum auctor. Aenean sed ante congue, facilisis ipsum eu, gravida lacus.</p>
+        </div>
+        <img src="{% static "losar.jpeg" %}" class="md:w-1/3" style="border-radius: 20px;">
+      </div>
+      <div class="flex flex-col md:flex-row items-center">
+        <img src="{% static "happy.jpeg" %}" class="md:w-1/3" style="border-radius: 20px;">
+        <div class="md:ml-16 xl:ml-32">
+          <h4 class="text-2xl md:text-3xl font-bold text-secondary-800 mb-4">Outside of Class</h4>
+          <p class="text-secondary-700 text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet est tellus, et consequat sem sodales id. Quisque molestie et mauris efficitur lacinia.</p>
+          <p class="text-secondary-700 text-lg">Aliquam eget semper mi. Mauris magna risus, viverra in nulla id, placerat fermentum tellus. Aliquam non felis eu dui fermentum auctor. Aenean sed ante congue, facilisis ipsum eu, gravida lacus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="testimonials" class="bg-blue-100">
+    <div class="mt-16">
+      <div class="bg-blue-500 pt-16 pb-16 md:pb-32 relative">
+        <img src="{% static "wave3.svg" %}" class="w-full absolute bottom-full h-16 lg:h-auto object-cover object-top">
+        <div class="container px-6 mx-auto">
+            <div class="md:w-2/3 mx-auto relative">
+              <img src="{% static "quote.svg" %}" class="absolute top-0 left-0 sm:-ml-16 -mt-4">
+              <h3 class="text-white italic text-2xl text-center">
+                  We must speak our own language rather than other language
+                <strong class="block not-italic mt-6 text-primary">Panchen lama</strong>
+              </h3>
+            </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center -mt-8 md:-mt-16 lg:-mt-24 relative">
+        <a href="#">
+          <img src="{% static "thinley.jpeg" %}" class="w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32 mx-2 lg:mx-4 object-cover rounded-full border-2 md:border-4 border-white">
+        </a>
+        <a href="#">
+          <img src="{% static "Sonam.jpeg" %}" class="w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32 mx-2 lg:mx-4 object-cover rounded-full border-2 md:border-4 border-white">
+        </a>
+        <a href="#">
+          <img src="{% static "karma.jpeg" %}" class="w-16 h-16 md:w-32 md:h-32 lg:w-48 lg:h-48 mx-2 lg:mx-4 object-cover rounded-full border-2 md:border-4 border-white">
+        </a>
+        <a href="#">
+          <img src="{% static "tenzinsean.jpg" %}" class="w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32 mx-2 lg:mx-4 object-cover rounded-full border-2 md:border-4 border-white">
+        </a>
+      </div>
+    </div>
+
+    <!-- TEAM INFORMATION -->
+
+    <section class="pt-20 pb-48">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center text-center mb-24">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h2 class="text-4xl font-semibold">Munsel School Teams & Member</h2>
+                    <p class="text-lg leading-relaxed m-4 text-gray-600">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, fuga.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="px-6">
+                        <img src="{% static "karma.jpeg" %}" alt="" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 240px;">
+                        <div class="pt-6 text-center">
+                            <h5 class="text-xl font-bold">Karma</h5>
+                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                               Tibetan Teacher
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="px-6">
+                        <img src="{% static "Sonam.jpeg" %}" alt="" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 240px;">
+                        <div class="pt-6 text-center">
+                            <h5 class="text-xl font-bold">Sonam Gyatso</h5>
+                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                Culture Teacher
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="px-6">
+                        <img src="{% static "thinley.jpeg" %}" alt="" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 240px;">
+                        <div class="pt-6 text-center">
+                            <h5 class="text-xl font-bold">Thinley</h5>
+                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                Tibetan Dance teacher
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                    <div class="px-6">
+                        <img src="{% static "tenzinsean.jpg" %}" alt="" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 240px;">
+                        <div class="pt-6 text-center">
+                            <h5 class="text-xl font-bold">Tenzin Sean</h5>
+                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                                Web & Video Editing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- footer page -->
+  <div id="contac" class="w-full" style="background-color: #4299e1;">
+    <div class="flex flex-wrap text-center text-white">
+
+      <!-- ABOUT COLUMN -->
+
+      <div class="w-full md:w-1/3 p-5 border-r border-blue-800 md:text-left">
+        <div class="my-6 ml-3 text-xl font-semibold">Munsel School (མུན་སེལ་སློབ་གྲྭ)</div>
+        <p class="p-3 text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac est massa. Donec eget elementum sapien, tincidunt tempor nunc. Cras sodales id ipsum at convallis.</p>
+        <p class="p-3 text-gray-200">Morbi tristique massa nec massa auctor, at scelerisque felis consectetur. Morbi tempus et odio sit amet feugiat. Maecenas dignissim a turpis in molestie. Fusce tincidunt vestibulum iaculis.</p>
+      </div>
+
+      <!-- CONTACTS COLUMN -->
+
+      <div class="w-full md:w-1/3 p-5 border-r border-blue-800">
+        <div class="my-6 text-xl font-semibold">CONTACT US</div>
+        <p class="mt-8 text-gray-200">
+          Gantristrasse 12 <br>
+          Zollikofen 3052 Bern<br>
+          Switzerland<br>
+
+          <strong>Phone:</strong> +1 5589 55488 55 <br>
+          <strong>Email:</strong> munselschool@gmail.com
+        </p>
+        <div class="relative w-20 h-20 mx-auto my-12 bg-blue-100 rotate-45">
+          <div class="flex justify-center items-center absolute left-0 top-0 w-10 h-10 hover:-ml-1 hover:-mt-1 bg-blue-800 cursor-pointer">
+            <a href="https://www.facebook.com/munselSchool/?modal=admin_todo_tour">
+                <i class="fab fa-facebook-f fa-lg text-blue-500 -rotate-45">
+                </i>
+            </a>
+          </div>
+          <div class="flex justify-center items-center absolute top-0 right-0 w-10 h-10 hover:-mt-1 hover:-mr-1 bg-blue-800 cursor-pointer">
+            <a href="https://www.youtube.com/channel/UCWOBEAWsSHBCz_PfR1hOGnw?view_as=subscriber">
+            <i class="fab fa-youtube fa-lg text-blue-500 -rotate-45"></i>
+            </a>
+          </div>
+          <div class="flex justify-center items-center absolute right-0 bottom-0 w-10 h-10 hover:-mr-1 hover:-mb-1 bg-blue-800 cursor-pointer">
+            <i class="fab fa-weixin fa-lg text-blue-500 -rotate-45"></i>
+          </div>
+          <div class="flex justify-center items-center absolute bottom-0 left-0 w-10 h-10 hover:-mb-1 hover:-ml-1 bg-blue-800 cursor-pointer">
+            <a href="https://www.instagram.com/tenzin_sean/?hl=en">
+            <i class="fab fa-instagram fa-lg text-blue-500 -rotate-45"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM COLUMN -->
+
+      <div class="w-full md:w-1/3 p-5">
+        <div class="mt-6 text-xl font-semibold">Message</div>
+        <form class="w-4/5 mx-auto mt-2 px-6 pt-6 pb-4 rounded" action="POST">
+            <!-- <div class="flex items-center mb-4">
+                {% csrf_token %}
+                <div class = "form-group">
+                    <p>
+                    <h3>{{ form.as_p }}</h3>
+                    </p>
+                    <br>
+                    <input type="submit" name="Subscribe" class = 'btn btn-primary btn-lg'>
+                </div>
+            </div> -->
+          <div class="flex items-center mb-4">
+            <input class="w-full h-10 p-2 border-b border-blue-800 bg-blue-900 text-white" type="text" placeholder="Username">
+          </div>
+          <div class="flex items-center mb-4">
+            <input class="w-full h-10 p-2 border-b border-blue-800 bg-blue-900 text-white" type="text" placeholder="Email">
+          </div>
+          <div class="mb-6">
+            <textarea class="w-full h-24 px-2 pt-2 border-b-2 border-blue-800 bg-blue-900 text-white" placeholder="Message"></textarea>
+          </div>
+          <div class="flex justify-between items-center">
+            <button class="w-full py-2 px-4 rounded text-white font-bold footer-button" type="button">SEND</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

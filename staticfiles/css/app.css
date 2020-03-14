@@ -1,0 +1,57 @@
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+/* Desktop */ 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+/* Tablet  */
+@media all and (min-width: 480px) and (max-width: 768px) { }
+ /* tablet */
+@media all and (max-width: 480px) { }
+/* phone */
+
+
+
+/* Number convert into other language */
+
+.number-one:hover span.number-1, span.number-2, span.number-3{
+    color: red;
+    cursor: pointer;
+}
+
+
+.number-3:hover {
+    cursor: pointer;
+    transition: color 400ms ease-in;
+}
+
+.zoomin img {
+    height: 350px;
+    width: 400px;
+    transition: all 2s ease;
+}
+
+.zoomin img:hover{
+    width: 450px;
+    height: 400px;
+    cursor: pointer;
+}
+
+
+.footer-button{
+    background-color: goldenrod;
+}
+
+.footer-button:hover{
+    background-color: gold;
+    transition: all 2s ease;
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .label-one{
+        padding-top: 20px;
+        text-align: center;
+    }
+ }
+
+
+
+
+
