@@ -18,6 +18,7 @@ Django==3.0.4
 django-cors-headers==3.2.1
 django-dotenv==1.4.2
 django-fontawesome-5==1.0.18
+django-heroku==0.3.1
 django-tailwind==0.7.0
 docker==4.2.0
 docker-compose==1.25.4
@@ -52,4 +53,5 @@ urllib3==1.24.3
 virtualenv==20.0.8
 wcwidth==0.1.8
 websocket-client==0.57.0
+whitenoise==5.0.1
 zipp==3.1.0
